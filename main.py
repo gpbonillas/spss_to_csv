@@ -1,5 +1,3 @@
-from spss_converter import read, write
-import pandas as pd
 import pyreadstat
 
 def convert_to_csv():
@@ -21,11 +19,5 @@ def convert_to_csv():
         df.to_csv(outpath, mode=wmode, header=header)
         cnt += 1
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
     convert_to_csv()
